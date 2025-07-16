@@ -34,7 +34,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return String.format("Book{titulo='%s', autor='%s', anio=%d}",
-                             titulo, autor, anio);
+        return "LIBRO:"+ "\tTitulo: " + titulo + ",\n\t autor: " + autor + ", anio=" + anio+"\n";
     }
 }

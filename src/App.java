@@ -36,7 +36,7 @@ public class App {
 
                 LibroController libroController= new LibroController();
                 Map<Book, Book> resultado = libroController.procesarLibros(libros);
-                System.out.println("=== Libros ordenados y sin duplicados ===");
+                System.out.println("Nombre: Daniel Duran \n Fecha: 16/7/2025\n");
                 resultado.values().forEach(System.out::println);
     }
 }

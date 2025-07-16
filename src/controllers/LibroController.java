@@ -1,4 +1,3 @@
-// src/controllers/LibroController.java
 package controllers;
 
 import java.util.Comparator;
@@ -10,12 +9,6 @@ import models.Book;
 
 public class LibroController {
 
-    /**
-     * Ordena y filtra la lista de libros usando un TreeMap:
-     *  - Clave = valor = Book
-     *  - Orden: título DESC, luego año ASC
-     *  - Duplicados (mismo título + año) se ignoran
-     */
     public Map<Book, Book> procesarLibros(List<Book> libros) {
         Comparator<Book> cmp = Comparator
             .comparing(Book::getTitulo, Comparator.reverseOrder())
